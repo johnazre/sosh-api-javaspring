@@ -34,6 +34,22 @@ public class Message {
     // No-arg constructor for Hibernate
     public Message() {}
 
+    public User getSender() {
+        return sender;
+    }
+
+    public void setSender(User sender) {
+        this.sender = sender;
+    }
+
+    public User getRecipient() {
+        return recipient;
+    }
+
+    public void setRecipient(User recipient) {
+        this.recipient = recipient;
+    }
+
     public Message(String subject, String body, Date created_at) {
         this.subject = subject;
         this.body = body;
